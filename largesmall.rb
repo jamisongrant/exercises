@@ -6,13 +6,17 @@ ArrayB = [{value: "ab", value_length: 2, type: 0},{value: "abc", value_length: 3
 
 # p arr.max
 
-def bigtimer(arr,type)
-  arr.select{|x| x[:int] == type}
-     .max_by{|x| x[:value_length]}
-end
+# p arr.minmax
 
-def smalltimer(arr,type)
-  arr.select{|x| x[:type] == type}
-     .min_by{|x| x[:value_length]}
-end
+# def bigtimer(arr,type)
+#   arr.select{|x| x[:int] == type}
+#      .max_by{|x| x[:value_length]}
+# end
 
+# def smalltimer(arr,type)
+#   arr.select{|x| x[:type] == type}
+#      .min_by{|x| x[:value_length]}
+# end
+
+p arr.sort.first
+p arr.sort.last
