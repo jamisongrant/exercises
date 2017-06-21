@@ -38,7 +38,7 @@ str2 = "something something quick dog"
 #       longest = word
 #     end
 #   end
-  
+
 #   longest
 # end
 
