@@ -7,17 +7,17 @@ class Hamming
     arr1 = s1.chars 
     arr2 = s2.chars
 
-counter = 0
+    counter = 0
     
-  if arr1.length != arr2.length
+    if arr1.length != arr2.length
       fail ArgumentError
-  end
-
-    (arr1.length).times do |x|
-      if arr1[x] != arr2[x]
-      counter += 1
-      end
     end
+
+      (arr1.length).times do |x|
+        if arr1[x] != arr2[x]
+          counter += 1
+        end
+      end
     return counter
   end
 end
